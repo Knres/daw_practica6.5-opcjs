@@ -1,0 +1,50 @@
+/* === ESTILO PARA IMPRESIÓN === */
+body {
+  background: white;
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 12pt;
+  margin: 1cm;
+}
+
+section {
+  height: 100%;
+}
+
+header,
+nav,
+footer,
+.boton,
+video {
+  display: none !important;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+  font-size: 10pt;
+}
+
+img {
+  display: block;
+  justify-self: center;
+  max-width: 300px;
+  max-height: auto;
+  flex-grow: 1;
+  object-position: center;
+  /*posicionar la imagen; center*/
+  object-fit: contain;
+  /*rellenado del hueco sobrante de las dimensiones; none*/
+}
+
+p,
+h1,
+h2,
+h3,
+li {
+  color: black !important;
+}

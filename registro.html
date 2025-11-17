@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/seccion_loginRegistro.css">
+
+    
+    
+
+    <!--
+        <script src="./js/registro.js"></script>
+        -->
+    <script src="./js/registro_opc.js"></script>
+
+
+    <meta name="description" content="Página de registro de nuevo usuario">
+    <title> Registro. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./registro.html"><span class="icon-register"></span>Registrarse</a></li>
+                <li><a href="./login.html"><span class="icon-login"></span>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Registro de Usuario</h1>
+
+        <section id="seccion_loginRegistro">
+            <h2>Formulario de registro</h2>
+            <form id="formRegistro">
+                <label for="login">*Nombre:</label>
+                <input type="text" name="login" placeholder="Nombre de usuario" id="login" autofocus
+                    title="sólo puede contener letras del alfabeto inglés (en mayúsculas y minúsculas) y números; no puede comenzar con un número; longitud mínima 3 caracteres y máxima 15.">
+
+                <label for="password1">*Contraseña:</label>
+                <input type="password" name="pwd" placeholder="Contraseña" id="password1"
+                    title="sólo puede contener letras del alfabeto inglés (en mayúsculas y minúsculas), números, el guion y el guion bajo (subrayado); al menos debe contener una letra en mayúscula, una letra en minúscula y un número; longitud mínima 6 caracteres y máxima 15.">
+
+                <label for="password2">*Confirmar:</label>
+                <input type="password" name="pwd2" placeholder="Repete la contraseña" id="password2"
+                    title="su valor debe coincidir con el escrito en el campo contraseña.">
+
+                <label for="email">*Correo:</label>
+                <input type="text" name="email" placeholder="ejemplo@alu.ua.es" id="email"
+                    title="El formato de un correo electrónico es parte-local@dominio; La longitud máxima de parte-local es 64 caracteres. La longitud máxima de dominio es 255 caracteres. Cada una de las partes tiene una longitud mínima de 1 carácter; La parte-local es una combinación de las letras mayúsculas y minúsculas del alfabeto inglés, los dígitos del 0 al 9, los caracteres imprimibles !#$%&'*+-/=?^_`{|}~ y el punto; El punto no puede aparecer ni al principio ni al final y tampoco pueden aparecer dos o más puntos seguidos; El dominio es una secuencia de uno o más subdominio separados por un punto; La longitud máxima de subdominio es 63 caracteres; Un subdominio es una combinación de las letras mayúsculas y minúsculas del alfabeto inglés, los dígitos del 0 al 9 y el guion. El guion no puede aparecer ni al principio ni al final; La longitud máxima de una dirección de correo electrónico es 254 caracteres">
+
+                <label for="sexo">*Sexo:</label>
+                <select id="sexo" name="sexo" title="Selecciona un Sexo">
+                    <option value="">--Selecciona un Sexo--</option>
+                    <option value="h">Hombre</option>
+                    <option value="m">Mujer</option>
+                </select>
+
+                <!--
+                    <input type="radio" id="sexo_h" name="sexo" value="hombre">
+                    <label for="sexo_h">Hombre</label>
+                    <input type="radio" id="sexo_m" name="sexo" value="mujer">
+                    <label for="sexo_m">Mujer</label>
+                -->
+
+                <label for="nacimiento">*Fecha de nacimiento:</label>
+                <input type="text" name="nacimiento" id="nacimiento" placeholder="DD/MM/AAAA"
+                    title="Formato de la fecha: DD/MM/AAAA; Sea una fecha válida y que la persona tenga al menos 18 años recién cumplidos el mismo día en que se registra.">
+
+                <label for="ciudad_formulario">Ciudad:</label>
+                <input type="text" name="ciudad_formulario" placeholder="Ciudad" id="ciudad_formulario">
+
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="">--Selecciona un país--</option>
+                    <option value="es">España</option>
+                    <option value="fr">Francia</option>
+                    <option value="it">Italia</option>
+                    <option value="pt">Portugal</option>
+                    <option value="de">Alemania</option>
+                </select>
+
+                <label for="img">Elegir imagen...</label>
+                <input type="file" name="img" id="img" accept="image/*">
+
+                <input type="submit" value="Registrar" class="btn_normal">
+                <input type="reset" value="Limpiar" class="btn_blanco">
+            </form>
+
+            <p>¿Ya tienes cuenta?</p>
+
+            <a href="./login.html" class="btn_blanco">Ir a Login</a>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+
+    </footer>
+
+    <dialog id="dialogError">
+        <form method="dialog">
+            <h2>Se han encontrado los siguientes errores:</h2>
+            <p id="mnsDialogError"></p>
+            <button value="ok" class="btn_blanco">Entendido</button>
+        </form>
+    </dialog>
+
+    <dialog id="dialogExito" onclose="dialogoExitoCerrado(event)" oncancel="eventoCancelado(event)">
+        <form method="dialog">
+            <h2>Campos Verificados</h2>
+            <p id="mnsDialogExito"></p>
+            <button value="ok" class="btn_blanco">Empezar a navegar (Ir a index)</button>
+        </form>
+    </dialog>
+
+</body>
+
+</html>

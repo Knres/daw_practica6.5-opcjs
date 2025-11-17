@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+    
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/anuncio.css">
+    
+    
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    <meta name="description" content="Pagina de un anuncio">
+    <title> Titulo del anuncio. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./registro.html"><span class="icon-register"></span>Registrarse</a></li>
+                <li><a href="./login.html"><span class="icon-login"></span>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Anuncio Ejemplo</h1>
+
+        <section class="descripcion">
+            <h2>Descripción</h2>
+            <p>Publicador: AAAAAAAA</p>
+            <a href="enviarMensaje.html">
+                Enviar Mensaje al Publicador
+            </a>
+            <p>
+                Esto es una descripción
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum possimus magni, nam culpa aliquam nulla
+                doloremque ipsum. Autem voluptatibus assumenda corrupti maiores, consectetur, praesentium, maxime
+                accusamus vel provident vero molestias.
+            </p>
+        </section>
+
+        <section class="caracteristicas">
+            <h2> Características</h2>
+
+            <ul>
+                <li>Tipo de Anuncio: Alquiler</li>
+                <li>Tipo de vivienda: Vivienda</li>
+                <li>Superficie: 120 m²</li>
+                <li>Número de habitaciones: 3</li>
+                <li>Número de baños: 2</li>
+                <li>Ciudad: Madrid</li>
+                <li>Precio: 888888.88 €</li>
+                <li>Año de construccion: 1980</li>
+            </ul>
+        </section>
+
+        <section class="foto">
+            <h2> Fotografias </h2>
+            <img src="./img/606208.jpg" alt="imagen">
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+
+    </footer>
+
+</body>
+
+</html>

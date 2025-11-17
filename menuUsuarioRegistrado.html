@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    <meta name="description" content="Menu de usuario Registrado">
+    <title> Menu Usuario. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./index.html"><span class="icon-logout"></span>Logout</a></li>
+                <li><a href="./menuUsuarioRegistrado.html"><span class="icon-star_select"></span>Menu de Usuario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Menu Usuario</h1>
+
+        <section>
+            <h2>NombreUsuario</h2>
+            <picture><img src="./img/img_perfil.jpg" alt="img_perfil"></picture>
+
+        </section>
+
+        <section>
+            <h2>Funciones del Usuario</h2>
+
+            <ul>
+                <li><a href="./error.html">Modificar perfil</a></li>
+                <li><a href="./error.html">Eliminar cuenta</a></li>
+                <li><a href="./error.html">Mis anuncios</a></li>
+                <li><a href="./error.html">Crear anuncio</a></li>
+                <li><a href="./misMensajes.html">Mensajes enviados/recibidos</a></li>
+                <li><a href="./solicitarFolleto.html">Solicitar un folleto impreso</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+
+    </footer>
+</body>
+
+</html>

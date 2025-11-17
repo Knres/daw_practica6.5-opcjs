@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    
+    
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    <meta name="description" content="Página accesibilidad digital">
+    <title> Accesibilidad digital. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./registro.html"><span class="icon-register"></span>Registrarse</a></li>
+                <li><a href="./login.html"><span class="icon-login"></span>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Accesibilidad digital</h1>
+
+        <section>
+            <h2>Declaración de accesibilidad</h2>
+            <p>
+                En <strong>PI - Pisos & Inmuebles</strong> trabajamos para que nuestra página web sea accesible para el
+                mayor número
+                posible de personas, con independencia de sus capacidades, dispositivo o entorno tecnológico.
+                Esta declaración de accesibilidad se basa en las <abbr title="Web Content Accessibility Guidelines">WCAG
+                    2.1</abbr> del
+                <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">W3C – Web Accessibility
+                    Initiative (WAI)</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Etiquetado semántico</h2>
+            <p>
+                Toda la estructura del sitio se ha desarrollado empleando etiquetas semánticas de HTML5
+                (<code>&lt;header&gt;</code>,
+                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>,
+                <code>&lt;article&gt;</code> y
+                <code>&lt;footer&gt;</code>) para mejorar la comprensión por parte de lectores de pantalla y navegadores
+                especializados.
+            </p>
+            <p>
+                Además, se han utilizado atributos <code>aria-label</code> y <code>alt</code> en todos los elementos
+                visuales y
+                enlaces relevantes, de forma que el contenido sea interpretado correctamente por tecnologías de
+                asistencia.
+            </p>
+        </section>
+
+        <section>
+            <h2>Texto alternativo de las imágenes</h2>
+            <p>
+                Todas las imágenes incorporan un texto alternativo (<code>alt</code>) que describe su contenido o
+                función. Las
+                imágenes puramente decorativas se han omitido del marcado HTML o gestionado mediante CSS, para evitar
+                distracciones o redundancias en la lectura de pantalla.
+            </p>
+        </section>
+
+        <section>
+            <h2>Uso correcto de los colores</h2>
+            <p>
+                Los colores empleados respetan la identidad visual del sitio y cumplen con los niveles de contraste
+                recomendados
+                por las pautas WCAG 2.1 (nivel AA). Además, se han implementado estilos alternativos que permiten
+                aumentar el
+                contraste o emplear fondos oscuros para reducir la fatiga visual.
+            </p>
+        </section>
+
+        <section>
+            <h2>Activación de estilos accesibles</h2>
+            <p>
+                El sitio ofrece varias hojas de estilo accesibles que pueden seleccionarse desde el navegador web. En
+                <strong>Mozilla Firefox</strong>, el usuario puede activar estas opciones desde el menú
+                <em>Ver → Estilo de página</em>:
+            </p>
+            <ul>
+                <li><strong>Modo noche</strong>: interfaz con fondo oscuro para lectura nocturna.</li>
+                <li><strong>Alto contraste</strong>: maximiza la legibilidad mediante colores muy diferenciados.</li>
+                <li><strong>Texto grande</strong>: aumenta el tamaño del texto para usuarios con baja visión.</li>
+                <li><strong>Alto contraste y texto grande</strong>: combina ambas opciones anteriores.</li>
+                <li><strong>Estilo para impresión</strong>: aplicado automáticamente al imprimir o generar PDF.</li>
+            </ul>
+            <p>
+                En navegadores que no soportan la selección de estilos alternativos (como Chrome o Edge), se puede
+                utilizar el
+                menú de accesibilidad propio del sitio o las extensiones del navegador para modificar el contraste o el
+                tamaño del
+                texto.
+            </p>
+        </section>
+
+        <section>
+            <h2>Otras características de accesibilidad</h2>
+            <ul>
+                <li>Diseño adaptativo y responsive para diferentes dispositivos y tamaños de pantalla.</li>
+                <li>Compatibilidad con ampliación mediante zoom sin pérdida de funcionalidad.</li>
+                <li>Separación entre contenido y presentación mediante hojas de estilo CSS.</li>
+                <li>Enlaces y botones accesibles con teclado y visibles en su estado de foco.</li>
+                <li>Uso de tipografía <strong>Atkinson Hyperlegible</strong> en los estilos accesibles para mejorar la
+                    lectura.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Compromiso de mejora continua</h2>
+            <p>
+                Nuestro equipo sigue trabajando para mejorar la accesibilidad de este sitio web. Si encuentra alguna
+                dificultad
+                para acceder a la información o funcionalidades, puede ponerse en contacto con nosotros a través del
+                formulario de
+                <a href="./error.html">contacto</a> o mediante correo electrónico a
+                <a href="correo@ua.es">correo@ua.es</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+    </footer>
+
+</body>
+
+</html>

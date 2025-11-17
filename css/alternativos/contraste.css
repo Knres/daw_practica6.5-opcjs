@@ -1,0 +1,33 @@
+/* === ALTO CONTRASTE === */
+:root {
+  --btn: #ffffff;
+  --btn-blanco: #ffffff;
+  --btn-enfoque: #ffff00;
+  --btn-blancoEnfoque: #ffff00;
+  --btn-sombra: #ffff00;
+  --btn-sombraClaro: #ffff00;
+
+  --header-bg: #000000;
+  --body-bg: #000000;
+  --body-bg2: #000000;
+  --section-bg: #000000;
+  --article-bg: #000000;
+  --footer-bg: #000000;
+  --card: #000000;
+
+  --txt-h: #ffffff;
+  --txt-principal: #ffff00;
+  --txt-secundario: #ffffff;
+  --txt-claro: #ffffff;
+  --txt-claroEnfoque: #00ffff;
+
+  --borde: #ffff00;
+  --sombra: #ffff00;
+  --sombraMenor: #ffff00;
+  --subrayado: #ffff00;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: underline;
+}

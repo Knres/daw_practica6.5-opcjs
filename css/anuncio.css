@@ -1,0 +1,48 @@
+main * {
+    display: flex;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding:0 5% 0 5%;
+    width: 100%;
+    justify-content: center;
+    >h1{
+        width: 100%;
+    }
+    >section{
+        margin: 0 0.3rem 0 0.3rem;
+    }
+ 
+}
+   section.descripcion{
+        order: 3;
+        flex-grow: 2 ;
+        flex-direction: column;
+
+    }
+ 
+    section.caracteristicas{
+        order: 2;
+        flex-grow: 1;
+        max-width: 50%;
+        flex-direction: column;
+        ul{
+            padding: 0%;
+            flex-direction: column;
+            >li{
+                flex-direction: column;
+                }
+        }
+    }
+       section.foto{
+        flex-direction: column;
+        order: 1;
+        flex-grow: 1;
+        max-width: 50%;
+        justify-self: left;
+        >img{
+            border-radius: 2%;
+        }
+    }

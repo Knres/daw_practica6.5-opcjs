@@ -1,0 +1,46 @@
+main * {
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 5% 0 5%;
+    width: 100%;
+    justify-content: center;
+    >h1{
+        width: 100%;
+    }
+    >ul{
+        flex-direction: row;
+        width: 100%;
+    }
+    >section{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 0.3rem 0 0.3rem;
+        >article{
+            border-bottom: 0.4rem solid var(--borde);
+           
+
+            }
+    }
+
+ 
+}
+
+.salida{
+    background-color: var(--negativo);
+}
+.entrada{
+    background-color: var(--positivo);
+}
+.btn_normal{
+    width: fit-content;
+}
+#Enviados{
+    background-color: var(--negativo);
+}
+#Recibidos{
+    background-color: var(--positivo);
+}

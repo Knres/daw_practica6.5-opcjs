@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/solicitarFolleto.css">
+
+
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+
+
+    <script src="./js/solicitarFolleto.js"></script>
+
+    <meta name="description" content="Página de solicitud de folleto">
+    <title> Solicitar folleto. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./registro.html"><span class="icon-register"></span>Registrarse</a></li>
+                <li><a href="./login.html"><span class="icon-login"></span>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Solicitar un folleto</h1>
+        <section>
+            <h2>Tarifas</h2>
+            <table>
+                <tr>
+                    <th scope="col">Concepto</th>
+                    <th scope="col">Tarifa</th>
+                </tr>
+
+                <tr>
+                    <td>Coste de procesamiento y envio:</td>
+                    <td>10€</td>
+                </tr>
+
+                <tr>
+                    <td>&lt; paginas</td>
+                    <td>2€ por pagina</td>
+                </tr>
+
+                <tr>
+                    <td>entre 5 y 10 paginas</td>
+                    <td>1.8€ por pagina</td>
+                </tr>
+
+                <tr>
+                    <td>&gt; paginas</td>
+                    <td>1.6€ por pagina</td>
+                </tr>
+
+                <tr>
+                    <td>Blanco y negro </td>
+                    <td>0€</td>
+                </tr>
+
+                <tr>
+                    <td>Color</td>
+                    <td>0.5€ por foto</td>
+                </tr>
+
+                <tr>
+                    <td>Resolución &lt;&#61; 300dpi</td>
+                    <td>0€ por foto</td>
+                </tr>
+                <tr>
+                    <td>Resolución &gt; 300dpi</td>
+                    <td>0.2€ por foto</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contenedorTablaCostes">
+            <h2>Tabla con posibles costes de un folleto de publicidad impreso</h2>
+            <button id="btnMostrarCostes" class="btn_normal">Mostrar / Ocultar posibles costes</button>
+        </section>
+
+
+        <section>
+            <h2>Rellena la informacion necesaria</h2>
+            <p>esto es un formulario para solicitar que te impriman un folleto guapisimo con las Características que
+                pidas Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci iure perferendis velit
+                dolor! Ex sunt, quisquam officia ipsa ducimus eos est explicabo temporibus culpa repellat a non
+                reiciendis corporis?</p>
+        </section>
+
+        <form action="./solicitudFolletoEnviado.html">
+            <!-- Datos personales -->
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="nombre" id="Nombre" placeholder="Nombre, Apellido" maxlength="200" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="ejemplo@alu.ua.es" maxlength="200" required>
+
+            <label for="infoAdicional">Información adicional:</label>
+            <textarea name="infoAdicional" id="infoAdicional" placeholder="Información adicional"
+                maxlength="4000"></textarea>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="calle" id="direccion" placeholder="Calle" required>
+
+            <input type="text" name="direccion_num" id="direccion_num" placeholder="número" required>
+
+            <input type="text" name="direccion_piso" id="direccion_piso" placeholder="piso" required>
+
+            <input type="text" name="direccion_post" id="direccion_post" placeholder="CP" required>
+
+            <select id="localidad" name="localidad">
+                <option value="x">localidad x</option>
+                <option value="y">localidad y</option>
+                <option value="z">localidad z</option>
+            </select>
+
+            <select id="provincia" name="provincia">
+                <option value="x">provincia x</option>
+                <option value="y">provincia y</option>
+                <option value="z">provincia z</option>
+            </select>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Teléfono destinatario del envío postal">
+
+
+            <!-- Información del folleto -->
+            <label for="colorPortada">Color de la portada:</label>
+            <input type="color" id="colorPortada" name="colorPortada" value="#000000">
+
+            <label for="numCopias">Número de copias:</label>
+            <input type="number" name="numCopias" id="numCopias" value="1" min="1" max="99">
+
+            <label for="resolucion">Resolución de Fotos (DPI):</label>
+            <input type="range" id="resolucion" name="resolucion" min="150" max="900" step="150" value="150">
+
+            <label for="anuncio">Anuncios sobre el que se basará el folleto:</label>
+            <select id="anuncio" name="anuncio">
+                <option value="">--Selecciona uno de tus anuncio--</option>
+                <option value="x">anuncio x</option>
+                <option value="y">anuncio y</option>
+                <option value="z">anuncio z</option>
+            </select>
+
+
+            <label for="fechaRecepcion">Fecha aproximada de recepción:</label>
+            <input type="date" name="fechaRecepcion" id="fechaRecepcion">
+
+
+            <p>Tipo de Impresión</p>
+            <input type="radio" id="a_color" name="color" value="color_full">
+            <label for="a_color">A Color</label>
+            <input type="radio" id="blanco_negro" name="color" value="color_bn">
+            <label for="blanco_negro">Blanco/negro</label>
+
+            <p>Impresión precio del anuncio</p>
+            <input type="radio" id="siPrecio" name="precio" value="si">
+            <label for="siPrecio">si</label>
+            <input type="radio" id="noPrecio" name="precio" value="no">
+            <label for="noPrecio">no</label>
+            <fieldset id="botones">
+                <input type="submit" id="btn_solicitar" class="btn_normal" value="Solicitar">
+                <input type="reset" id="btn_borrar" class="btn_normal" value="Limpiar">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+
+    </footer>
+</body>
+
+</html>

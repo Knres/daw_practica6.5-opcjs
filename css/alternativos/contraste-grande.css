@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+/* === ALTO CONTRASTE + TEXTO GRANDE === */
+:root {
+  --btn: #ffffff;
+  --btn-blanco: #ffffff;
+  --btn-enfoque: #ffff00;
+  --btn-blancoEnfoque: #ffff00;
+  --btn-sombra: #ffff00;
+  --btn-sombraClaro: #ffff00;
+
+  --header-bg: #000000;
+  --body-bg: #000000;
+  --body-bg2: #000000;
+  --section-bg: #000000;
+  --article-bg: #000000;
+  --footer-bg: #000000;
+  --card: #000000;
+
+  --txt-h: #ffffff;
+  --txt-principal: #ffff00;
+  --txt-secundario: #ffffff;
+  --txt-claro: #ffffff;
+  --txt-claroEnfoque: #00ffff;
+
+  --borde: #ffff00;
+  --sombra: #000000;
+  --sombraMenor: #000000;
+  --subrayado: #ffff00;
+}
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.8;
+}
+
+
+a {
+  color: #00ffff;
+  text-decoration: underline;
+}

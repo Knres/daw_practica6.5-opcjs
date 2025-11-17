@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+    
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="css/enviarMensaje.css">
+    
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    <meta name="description" content="Página de mensajes">
+    <title> Mensaje. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./registro.html"><span class="icon-register"></span>Registrarse</a></li>
+                <li><a href="./login.html"><span class="icon-login"></span>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Enviar mensaje</h1>
+        <section>
+            <h2>Formulario de mensaje</h2>
+            <form action="./mensajeEnviado.html">
+                <!-- 
+            <label for="tipo_mensaje">Tipo de mensaje:</label>
+            <input type="text" id="tipo_mensaje" name="tipo_mensaje" list="opciones_mensaje"
+                placeholder="Tipo de Mensaje">
+            <datalist id="opciones_mensaje">
+                <option value="Más información">
+                <option value="Solicitar una cita">
+                <option value="Comunicar una oferta">
+            </datalist>
+            -->
+                <label for="tipo_mensaje">Tipo de mensaje:</label>
+                <select id="tipo_mensaje" name="tipo_mensaje" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="Más información">Más información</option>
+                    <option value="Solicitar una cita">Solicitar una cita</option>
+                    <option value="Comunicar una oferta">Comunicar una oferta</option>
+                </select>
+
+                <label for="txt_mensaje">Mensaje:</label>
+                <textarea name="txt_mensaje" id="txt_mensaje" minlength="1" placeholder="texto del mensaje"></textarea>
+
+                <button class="btn_normal" type="submit">enviar</button>   
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+
+    </footer>
+    <dialog open>
+        <p>Se ha enviado el mensaje con exito</p>
+        <p>Tipo de mensaje: XXXXXX</p>
+        <p>Texto: ASDASDASDASDASDASDAS</p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+</body>
+
+</html>

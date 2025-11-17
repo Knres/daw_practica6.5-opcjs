@@ -1,0 +1,86 @@
+#seccion_loginRegistro {
+    > form {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+        border-radius: 0.5em;
+        background-color: var(--article-bg);
+        border: 0.1em solid var(--borde);
+        box-shadow: 0 0 20px var(--sombraMenor);
+        gap: 0.8em;
+
+        > label {
+            font-weight: 600;
+            color: var(--txt-principal);
+            margin-bottom: 0.2em;
+        }
+
+        > input[type="text"],
+        > input[type="password"],
+        > input[type="email"],
+        > input[type="date"],
+        > input[type="file"],
+        > input[type="number"],
+        > select {
+            padding: 0.6em;
+            border: 0.1em solid var(--borde);
+            border-radius: 0.4em;
+            background-color: var(--card);
+            color: var(--txt-principal);
+            font-size: 1em;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+
+            &:focus {
+                outline: none;
+                border: 0.1em solid var(--btn-enfoque);
+                box-shadow: 0 0 4px var(--btn-enfoque);
+            }
+        }
+        > input[type="file"],
+        > input[type="date"],
+        > select {
+            cursor: pointer;
+        }
+
+        > input[type="submit"],
+        > input[type="button"],
+
+        > input[type="reset"] {
+            grid-column: 1 / -1;
+            padding: 0.6em;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+    > p {
+        display: grid;
+        text-align: center;
+        font-weight: 500;
+        color: var(--txt-secundario);
+        margin-top: 1em;
+    }
+
+    > a{
+        display: grid;
+        text-align: center;
+        margin-top: 0.5em;
+    }
+
+}
+
+/* ==========================
+   MEDIA QUERIES
+========================== */
+
+@media all and (width >= 920px) { /* Ordenador */
+    #seccion_loginRegistro {
+        display: grid;
+
+        > form {
+            text-align: right;
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+    }
+}

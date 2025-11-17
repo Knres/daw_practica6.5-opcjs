@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Qinrui & Alejandro">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./css/colores.css">
+    
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/seccion_resultadosAnuncios.css">
+    <link rel="stylesheet" href="./css/seccion_loginRegistro.css">
+    
+    <!-- Estilos alternativos -->
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
+        title="Alto contraste y texto grande">
+
+    <!-- Estilo para impresión -->
+    <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    
+    <meta name="description" content="Página resultados busqueda">
+    <title> Resultados. PI - Pisos & Inmuebles </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" id="logo_menu">
+            <img src="./img/logo_pqnyo.gif" alt="logo pequeño">
+            PI - Pisos & Inmuebles
+        </a>
+        <p id="txtPromocional">encuentra miles de ofertas!</p>
+
+        <form action="./resultado.html" method="get">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            <button type="submit"><span class="icon-seach"></span>Buscar</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="./buscar.html"><span class="icon-seach"></span>Página de Buscar</a></li>
+                <li><a href="./registro.html"><span class="icon-register"></span>Registrarse</a></li>
+                <li><a href="./login.html"><span class="icon-login"></span>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página de Resultadosn de Busqueda</h1>
+
+
+        <section id="seccion_loginRegistro">
+            <h2>Filtros de busqueda</h2>
+            <form action="resultados.html" method="get">
+                <label for="tipo_anuncio">Tipo de anuncio:</label>
+                <select id="tipo_anuncio" name="tipo_anuncio">
+                    <option value="">--Selecciona tipo_anuncio--</option>
+                    <option value="venta">Obra nueva</option>
+                    <option value="alquiler">Vivienda</option>
+                    <option value="oficina">Oficina</option>
+                    <option value="local">Local</option>
+                    <option value="garaje">garaje</option>
+                </select>
+
+                <label for="tipo_vivienda">Tipo de vivienda:</label>
+                <select id="tipo_vivienda" name="tipo_vivienda">
+                    <option value="">--Selecciona tipo de vivienda--</option>
+                    <option value="obra_nueva">Obra nueva</option>
+                    <option value="vivienda">Vivienda</option>
+                    <option value="oficina">Oficina</option>
+                    <option value="local">Local</option>
+                    <option value="garaje">garaje</option>
+                </select>
+
+                <label for="ciudad_filtro">Ciudad:</label>
+                <input type="text" id="ciudad_filtro" name="ciudad" placeholder="Ciudad">
+
+
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="">--Selecciona--</option>
+                    <option value="es">España</option>
+                    <option value="fr">Francia</option>
+                </select>
+
+                <label for="precio">Precio:</label>
+                <input type="number" name="precio" id="precio" min="0.00" step="50" value="50">
+
+                <label for="fecha">Fecha de publicación:</label>
+                <input type="date" name="fecha" id="fecha" required>
+
+                <input type="submit" class="btn_normal">
+            </form>
+        </section>
+
+        <section  id="seccion_resultadosAnuncios">
+            <h2>Anuncios Buscados</h2>
+
+            <article>
+                <h3><a href="./404.html">Anuncio 1. Error</a></h3>
+
+                <a href="./404.html">
+                    <img src="./img/123313131.png" alt="imagen">
+                </a>
+
+                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p>Ciudad: Madrid</p>
+                <p>Pais: España</p>
+                <p>Precio: 888888,88 €</p>
+            </article>
+
+            <article>
+                <h3><a href="./anuncio.html">Anuncio 2</a></h3>
+
+                <a href="./anuncio.html">
+                    <img src="./img/606208.jpg" alt="imagen">
+                </a>
+
+                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p>Ciudad: Madrid</p>
+                <p>Pais: España</p>
+                <p>Precio: 888888,88 €</p>
+            </article>
+
+            <article>
+                <h3><a href="./anuncio.html">Anuncio 3</a></h3>
+
+                <a href="./anuncio.html">
+                    <img src="./img/606208.jpg" alt="imagen">
+                </a>
+
+                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p>Ciudad: Madrid</p>
+                <p>Pais: España</p>
+                <p>Precio: 888888,88 €</p>
+            </article>
+
+            <article>
+                <h3><a href="./anuncio.html">Anuncio 4</a></h3>
+
+                <a href="./anuncio.html">
+                    <img src="./img/606208.jpg" alt="imagen">
+                </a>
+
+                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p>Ciudad: Madrid</p>
+                <p>Pais: España</p>
+                <p>Precio: 888888,88 €</p>
+            </article>
+
+            <article>
+                <h3><a href="./anuncio.html">Anuncio 5</a></h3>
+
+                <a href="./anuncio.html">
+                    <img src="./img/606208.jpg" alt="imagen">
+                </a>
+
+                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p>Ciudad: Madrid</p>
+                <p>Pais: España</p>
+                <p>Precio: 888888,88 €</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
+        <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+
+    </footer>
+
+</body>
+
+</html>

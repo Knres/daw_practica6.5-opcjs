@@ -1,0 +1,39 @@
+:root {
+    
+    /* Botones */
+    --btn: #5b8987;
+    --btn-blanco: #000000;
+    --btn-enfoque: #77b9d5;
+    --btn-blancoEnfoque: #b6b6b6;
+    --btn-sombra: #fffffff3;
+    --btn-sombraClaro:#f5f5f5;
+    
+    /* Fondos */
+    --header-bg: #222222;
+    --body-bg: #000000;
+    --body-bg2: #000000;
+    --section-bg: #0c7e77;
+    --article-bg: #3e4948;
+    --footer-bg: #111827;
+    --card: #ffffff;
+    --positivo: #a6fca6 ;
+    --negativo: #c9c9c9;
+    --borrar: #e0b4b4;
+    /* Texto */
+    --txt-h: #ffffff;
+    --txt-principal: #ffffff;
+    --txt-secundario: #b8b8b8;
+    --txt-claro:#ffffff;
+    --txt-claroEnfoque:#00fff2;
+    
+    /* Mensajes / Estados */
+    --mns-exito: #10B981;
+    --mns-aviso: #f8f32b;
+    --mns-error: #ff0035;
+
+    /* Borde */
+    --borde: #00000044;
+    --sombra: #000000bb;
+    --sombraMenor: #00000043;
+    --subrayado: #0000002c;
+}

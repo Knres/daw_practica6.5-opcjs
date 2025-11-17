@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* font-family: "Anton", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Para toda la pag */
+/* font-family: "Roboto", serif; */
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+
+
+body {
+    margin: 0em;
+    padding: 0em;
+    background: linear-gradient(180deg, var(--body-bg), var(--body-bg2));
+    min-width: 390px;
+    /*solo se puede comprimir hasta los 390px*/
+
+    >header {
+        padding: 1em;
+        background-color: var(--header-bg);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--txt-claro);
+        text-align: center;
+
+        /*logo del menu*/
+        >a {            
+            text-decoration: none;
+            color: var(--txt-claro);
+            font-size: 1.2em;
+            font-weight: bold; /*negrita*/
+            text-wrap: nowrap; /*no hacer salto de linea*/
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            
+            
+            >img {
+                content: url("../img/logo_grde.png");
+            }
+        }
+
+        /*txt promocional*/
+        > p {
+            display: inline;
+        }
+
+        
+        >form {
+            justify-content: center;
+            padding: 0.5em;
+
+            >input[type="text"] {
+                padding: 0.5em;
+                border: 0px solid var(--color-borde);
+                border-radius: 0.5em 0 0 0.5em;
+                color: var(--txt-principal);
+            }
+
+            >button {
+                padding: 0.5em;
+                border: none;
+                border-radius: 0 0.5em 0.5em 0;
+                background-color: var(--btn);
+                color: var(--txt-principal);
+                font-weight: 500;
+                box-shadow: 0 2px 4px var(--btn-sombra);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--btn-enfoque);
+                    color: var(--txt-principal);
+                }
+            }
+        }
+        
+
+        >nav {
+            >ul {
+                list-style: none;
+
+                padding: 0;
+                margin: 0.5em 0 0;
+                text-align: left;
+
+                >li {
+                    >a {
+                        font-family: "Anton", serif;
+                        text-decoration: none;
+                        color: var(--txt-claro);
+                        transition: color 0.5s ease;
+                        
+                        text-overflow: ellipsis; /*es muy largo se sustituye por "..."*/
+                        text-wrap: nowrap; /*no hacer salto de linea*/
+                        overflow: hidden; /*ocultar el contenido sobresaliente*/
+
+                        &:hover {
+                            color: var(--txt-claroEnfoque);
+                            text-decoration: underline;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    > main {
+        > h1 {
+
+            color: var(--txt-h);
+            text-align: center;
+
+            padding-bottom: .4em;
+            border-bottom: .1em solid var(--subrayado);
+        }
+
+        > section {
+            background-color: var(--section-bg);
+            padding: 1.5em;
+            border-radius: 0.5em;
+            box-shadow: 0 0 20px var(--sombra);
+            margin: 1em ;
+            color: var(--txt-principal);
+    
+            > h2 {
+                color: var(--txt-h);
+                text-align: center;
+                padding-bottom: .4em;
+            }
+        }
+    }
+
+    >footer {
+        background-color: var(--footer-bg);
+        padding: 10px 0 10px 0 ;
+        text-align: center;
+        
+        > p {
+            color: var(--txt-claro);
+            > a {
+                font-family: "Anton", serif;
+
+                text-decoration: none;
+                color: var(--txt-claro);
+
+                &:hover {
+                    color: var(--txt-claroEnfoque);
+                    text-decoration: underline;
+                }
+                
+            }
+        }
+    }
+}
+
+
+.noVisible {
+    display: none;
+}
+
+
+.btn_normal{
+    color: var(--txt-principal);
+    display: inline-block;
+    padding: .4em .1em;
+    border: .1em solid var(--btn-sombra);
+    background-color: var(--btn);
+    border-radius:.4em ;/*redondear las esquinas del boton*/
+    box-shadow: 1px 1px 2px var(--btn-sombra); /*sombra del boton*/
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+    text-decoration: none;
+    
+    cursor: pointer; /*cambiar cursor a pulsar*/
+
+    &:hover {
+        background-color: var(--btn-enfoque);
+    }
+    &:active { /*efecto de dar clic*/
+        box-shadow: inset 1px 1px 2px #000;
+    }
+}
+
+.btn_blanco{
+    color: var(--txt-principal);
+    display: inline-block;
+    padding: .4em .1em;
+    border: .1em solid var(--btn-sombra);
+    background-color: var(--btn-blanco);
+    border-radius:.4em ;/*redondear las esquinas del boton*/
+    box-shadow: 1px 1px 2px var(--btn-sombra); /*sombra del boton*/
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+    text-decoration: none;
+    
+    cursor: pointer; /*cambiar cursor a pulsar*/
+
+    &:hover {
+        background-color: var(--btn-blancoEnfoque);
+    }
+    &:active { /*efecto de dar clic*/
+        box-shadow: inset 1px 1px 2px #000;
+    }
+}
+
+
+
+#dialogExito {
+    background-color: var(--mns-exito);
+    color: var(--txt-claro);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 20px var(--mns-exito);
+    max-width: 400px;
+    margin: auto;
+}
+
+#dialogAviso {
+    background-color: var(--mns-aviso);
+    color: var(--txt-principal);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 20px var(--mns-aviso);
+    max-width: 400px;
+    margin: auto;
+}
+
+
+#dialogError {
+    background-color: var(--mns-error);
+    color: var(--txt-claro);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 20px var(--mns-error);
+    max-width: 400px;
+    margin: auto;
+}
+
+/*/////////////////////
+// REGLAS MEDIAQUERU //
+/////////////////////*/
+
+
+@media all and (width > 450px){/*Tablet*/
+    body{
+        >header {
+            >a {
+                gap: 0.5em;
+
+                >img {
+                    content: url("../img/logo_peqnyo.gif");
+                }
+            }
+
+            > p {
+                display: inline;
+            }
+
+            >nav {
+                >ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    gap: 1.2em;
+
+                    >li {
+                        >a {
+                            display: inline-flex;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media all and (width >= 920px){/*Ordenador*/
+    body{
+        >header {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+
+            >a {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            
+            
+                >img {
+                    content: url("../img/logo_pqnyo.gif");
+
+                    width: 2em;
+                    height: 2em;
+                }
+            }
+
+            > p {
+                display: none;
+            }
+
+            >nav {
+                >ul {
+                    >li {
+                        >a {
+                            align-items: center;
+                            justify-content: center;
+                            text-overflow: ellipsis; /*es muy largo se sustituye por "..."*/
+                            text-wrap: nowrap; /*no hacer salto de linea*/
+                            overflow: hidden; /*ocultar el contenido sobresaliente*/
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

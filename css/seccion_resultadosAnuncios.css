@@ -1,0 +1,73 @@
+#seccion_resultadosAnuncios {
+    >article {
+        padding: .5em;
+        border: 0.1em solid var(--borde);
+        border-radius: 0.5em;
+        background-color: var(--article-bg);
+        box-shadow: 0 0 20px var(--sombraMenor);
+        /*margin: .5em;*/
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+
+        >h3 {
+            text-align: center;
+            margin: .2em 0.1em;
+
+            color: var(--txt-principal);
+            text-overflow: ellipsis;
+            /*es muy largo se sustituye por "..."*/
+            text-wrap: nowrap;
+            /*no hacer salto de linea*/
+            overflow: hidden;
+            /*ocultar el contenido sobresaliente*/
+
+
+            >a {
+                text-decoration: none;
+                color: var(--txt-principal);
+
+
+            }
+        }
+
+        >a {
+            >img {
+                flex-grow: 1;
+                object-position: center;/*posicionar la imagen; center*/
+                object-fit: contain;/*rellenado del hueco sobrante de las dimensiones; none*/
+            }
+
+            /*Resaltar imagen*/
+            >img:hover {
+                transform: scale(0.95);/* Aumenta ligeramente el tamaño */
+                box-shadow: 0px 4px 10px #00000080;
+            }
+        }
+
+        >p {
+            margin: .2em 0.1em;
+        }
+    }
+}
+
+@media all and (width >=920px) {
+
+    /*Ordenador*/
+    #seccion_resultadosAnuncios {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+        grid-gap: .5em;
+        /*separacion para fila y columna*/
+
+        >h2 {
+            grid-column: 1 / -1;
+            /* ocupa todas las columnas disponibles */
+            margin-bottom: 0.5em;
+            border-bottom: .1em solid var(--subrayado);
+
+        }
+    }
+}

@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+    >section{
+
+        td:first-child, th:first-child {
+            border-left: none;
+        }
+
+        >table{
+           
+            border-radius: 6%;
+            border-collapse:separate;
+            td, th {
+            border-left:solid black 1px;
+            border-top:solid black 1px;
+            border-bottom: none;
+            border-right: none;
+            }
+            tr{
+                >th{
+                    border-top: none;
+                }
+            }
+            
+        }
+    }
+    >form{
+        > * {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        >select{
+            display: block;
+        }
+        >label{
+            display: inline-block;
+            width: 10%;
+        }
+        >input{
+            display: inline-block;
+            width: 88% ;
+        }
+        >textarea{
+            width: 100%;
+        }
+        #siPrecio, #noPrecio, #a_color, #blanco_negro{
+            width: fit-content;
+        }
+        section#botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            >input#btn_borrar{
+                background-color: var(--borrar);
+                width: 45%;
+                margin-left: 1em;
+            }
+            >input#btn_solicitar{
+                background-color: var(--positivo);
+                width: 45%;
+            }
+        }
+    }
+}
