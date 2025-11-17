@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/colores.css">
 
     <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/cookies.css">
     
     <!-- Estilos alternativos -->
     <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
@@ -22,6 +23,9 @@
 
     <!-- Estilo para impresión -->
     <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    <script src="./js/cookies.js"></script>
+    <script src="./js/estiloAlternativo.js"></script>
 
     <meta name="description" content="Menu de usuario Registrado">
     <title> Menu Usuario. PI - Pisos & Inmuebles </title>
@@ -76,8 +80,29 @@
     <footer>
         <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
         <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
-
+        <p><a href="politicaCookies.html">Política de cookies</a></p>
     </footer>
+
+    <aside id="bannerCookies">
+        <p>
+            Este sitio web utiliza cookies propias para mejorar la experiencia del usuario. 
+            Puede aceptar o rechazar las cookies. 
+            Para más información, consulte nuestra <a href="politicaCookies.html">Política de cookies</a>.
+        </p>
+        <nav class="contenedorBtnCookies">
+            <button type="button" id="btnAceptarCookies" class="btn_normal">Aceptar cookies</button>
+            <button type="button" id="btnRechazarCookies" class="btn_blanco">Rechazar cookies</button>
+        </nav>
+    </aside>
+
+    <dialog id="dialogAvisoCookies">
+        <form method="dialog">
+            <h2>Preferencias guardadas</h2>
+            <p id="mnsDialogCookies"></p>
+            <button class="btn_blanco">Cerrar</button>
+        </form>
+    </dialog>
+
 </body>
 
 </html>
