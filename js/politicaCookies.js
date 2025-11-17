@@ -5,13 +5,13 @@ function actualizarEstadoCookies() {
     var boton = document.getElementById('btnCambiarPreferencia');
     var consent = checkCookieConsent();
     
-    if (consent === 'accepted') {
+    if (consent == 'accepted') {
         estado.textContent = 'Actualmente tiene las cookies aceptadas.';
         boton.textContent = 'Rechazar cookies';
         boton.onclick = function() {
             rechazarCookiesYActualizar();
         };
-    } else if (consent === 'rejected') {
+    } else if (consent == 'rejected') {
         estado.textContent = 'Actualmente tiene las cookies rechazadas.';
         boton.textContent = 'Aceptar cookies';
         boton.onclick = function() {
@@ -44,7 +44,7 @@ function rechazarCookiesYActualizar() {
     actualizarEstadoCookies();
 }
 
-/////////////////
+//////////////////
 // Load
 
 function load() {

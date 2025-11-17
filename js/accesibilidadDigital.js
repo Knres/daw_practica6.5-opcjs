@@ -45,7 +45,7 @@ function crearSelectorEstilo() {
 
     // aplicar estilo (no se guarda en cookies)
     selector.addEventListener('change', function () {
-        if (this.value === '') {
+        if (this.value == '') {
             restaurarEstiloPredeterminado();
         } else {
             estilo(this.value);
@@ -66,7 +66,7 @@ function crearSelectorEstilo() {
 
 function guardarEstilo(titulo) {
     if (cookiesAceptadas()) {
-        if (titulo === '' || titulo === null) {
+        if (titulo == '' || titulo == null) {
             setCookie('estiloPreferido', '', -1); // eliminar cookies de estilo si se escoje el predeterminado
             mostrarMensajeConfirmacion('Se ha restaurado el estilo predeterminado. La preferencia de estilo ha sido eliminada.');
         } else {
@@ -91,7 +91,7 @@ function mostrarDialogError(mensaje) {
 }
 
 
-/////////////////
+//////////////////
 // Load
 
 function load() {
@@ -99,4 +99,3 @@ function load() {
 }
 
 document.addEventListener("DOMContentLoaded", load, false);
-

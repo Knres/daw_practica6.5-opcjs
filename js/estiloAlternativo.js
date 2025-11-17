@@ -53,7 +53,7 @@ function cargarEstiloGuardado() {
     }
 }
 
-/////////////////
+//////////////////
 // Load
 
 function load() {

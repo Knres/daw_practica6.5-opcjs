@@ -27,7 +27,7 @@ function checkCookieConsent() {
 
 function cookiesAceptadas() {
     var consent = checkCookieConsent();
-    return consent === 'accepted';
+    return consent == 'accepted';
 }
 
 function aceptarCookies() {
@@ -53,7 +53,7 @@ function ocultarBannerCookies() {
 function mostrarBannerCookies() {
     var consent = checkCookieConsent();
     
-    if (consent === '') {
+    if (consent == '') {
         var banner = document.getElementById('bannerCookies');
         if (banner) {
             banner.style.display = 'block';
@@ -75,7 +75,7 @@ function mostrarMensajeConfirmacion(mensaje) {
     }
 }
 
-/////////////////
+//////////////////
 // Load
 
 function load() {
