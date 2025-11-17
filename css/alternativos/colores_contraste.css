@@ -37,3 +37,7 @@
     --sombraMenor: #00000043;
     --subrayado: #0000002c;
 }
+
+#dialogAviso {
+  background-color: var(--body-bg);
+}

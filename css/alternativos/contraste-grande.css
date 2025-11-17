@@ -2,10 +2,10 @@
 
 /* === ALTO CONTRASTE + TEXTO GRANDE === */
 :root {
-  --btn: #ffffff;
-  --btn-blanco: #ffffff;
-  --btn-enfoque: #ffff00;
-  --btn-blancoEnfoque: #ffff00;
+  --btn: #8000FF;
+  --btn-blanco: #8000FF;
+  --btn-enfoque: #a349a4;
+  --btn-blancoEnfoque: #a349a4;
   --btn-sombra: #ffff00;
   --btn-sombraClaro: #ffff00;
 
@@ -39,4 +39,10 @@ body {
 a {
   color: #00ffff;
   text-decoration: underline;
+}
+
+#dialogAviso {
+  background-color: var(--body-bg);
+  color: var(--txt-principal);
+  box-shadow: 0 0 20px var(--mns-aviso);
 }

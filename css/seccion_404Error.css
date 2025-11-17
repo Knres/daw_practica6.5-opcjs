@@ -1,0 +1,17 @@
+#seccion_404 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    justify-items: center;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+#seccion_error {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    justify-items: center;
+    text-align: center;
+    padding: 2em 1em;
+}

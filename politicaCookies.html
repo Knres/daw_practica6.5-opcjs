@@ -6,29 +6,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Qinrui & Alejandro">
-    <meta name="keywords" content="HTML5, web, pisos, inmuebles">
+    <meta name="keywords" content="HTML5, web, pisos, inmuebles, cookies, política">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./icon/home.css"> <!-- Iconos -->
+    <link rel="stylesheet" href="./icon/home.css">
     <link rel="stylesheet" href="./css/colores.css">
-    
+
     <link rel="stylesheet" href="./css/headerFooter.css">
-    <link rel="stylesheet" href="./css/anuncio.css">
+    <link rel="stylesheet" href="./css/platilla_seccion.css">
     <link rel="stylesheet" href="./css/cookies.css">
+    
     <!-- Estilos alternativos -->
     <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
     <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
     <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
-    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
-        title="Alto contraste y texto grande">
+    <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css" title="Alto contraste y texto grande">
 
     <!-- Estilo para impresión -->
     <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
 
     <script src="./js/cookies.js"></script>
     <script src="./js/estiloAlternativo.js"></script>
-
-    <meta name="description" content="Pagina de un anuncio">
-    <title> Titulo del anuncio. PI - Pisos & Inmuebles </title>
+    <script src="./js/politicaCookies.js"></script>
+    
+    <meta name="description" content="Política de cookies del sitio web">
+    <title> Política de Cookies. PI - Pisos & Inmuebles </title>
 </head>
 
 <body>
@@ -54,40 +55,45 @@
     </header>
 
     <main>
-        <h1>Anuncio Ejemplo</h1>
+        <h1>Política de Cookies</h1>
 
-        <section class="descripcion">
-            <h2>Descripción</h2>
-            <p>Publicador: AAAAAAAA</p>
-            <a href="enviarMensaje.html">
-                Enviar Mensaje al Publicador
-            </a>
+        <section>
+            <h2>¿Qué son las cookies?</h2>
             <p>
-                Esto es una descripción
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum possimus magni, nam culpa aliquam nulla
-                doloremque ipsum. Autem voluptatibus assumenda corrupti maiores, consectetur, praesentium, maxime
-                accusamus vel provident vero molestias.
+                Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. 
+                Se utilizan para mejorar la experiencia del usuario y recordar preferencias.
             </p>
-        </section>
 
-        <section class="caracteristicas">
-            <h2> Características</h2>
-
+            <h2>Cookies utilizadas en este sitio web</h2>
+            <p>
+                Este sitio web utiliza las siguientes cookies:
+            </p>
+            
+            <h3>Cookies esenciales</h3>
             <ul>
-                <li>Tipo de Anuncio: Alquiler</li>
-                <li>Tipo de vivienda: Vivienda</li>
-                <li>Superficie: 120 m²</li>
-                <li>Número de habitaciones: 3</li>
-                <li>Número de baños: 2</li>
-                <li>Ciudad: Madrid</li>
-                <li>Precio: 888888.88 €</li>
-                <li>Año de construccion: 1980</li>
+                <li>
+                    <strong>cookieConsent:</strong> Almacena su preferencia sobre el uso de cookies. 
+                    Esta cookie es necesaria para recordar si ha aceptado o rechazado las cookies. 
+                    Duración: 90 días.
+                </li>
             </ul>
-        </section>
 
-        <section class="foto">
-            <h2> Fotografias </h2>
-            <img src="./img/606208.jpg" alt="imagen">
+            <h3>Cookies de preferencias</h3>
+            <ul>
+                <li>
+                    <strong>estiloPreferido:</strong> Almacena su preferencia de estilo visual del sitio web 
+                    (estilo normal, oscuro, contraste, texto grande, etc.). 
+                    Esta cookie solo se utiliza si ha aceptado las cookies. 
+                    Duración: 45 días.
+                </li>
+            </ul>
+
+            <h2>Gestión de preferencias de cookies</h2>
+            <p id="estadoActual"></p>
+            
+            <p>
+                <button type="button" id="btnCambiarPreferencia" class="btn_normal"></button>
+            </p>
         </section>
     </main>
 
@@ -96,18 +102,6 @@
         <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
         <p><a href="politicaCookies.html">Política de cookies</a></p>
     </footer>
-
-    <aside id="bannerCookies">
-        <p>
-            Este sitio web utiliza cookies propias para mejorar la experiencia del usuario. 
-            Puede aceptar o rechazar las cookies. 
-            Para más información, consulte nuestra <a href="politicaCookies.html">Política de cookies</a>.
-        </p>
-        <nav class="contenedorBtnCookies">
-            <button type="button" id="btnAceptarCookies" class="btn_normal">Aceptar cookies</button>
-            <button type="button" id="btnRechazarCookies" class="btn_blanco">Rechazar cookies</button>
-        </nav>
-    </aside>
 
     <dialog id="dialogAvisoCookies">
         <form method="dialog">

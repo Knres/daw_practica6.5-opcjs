@@ -4,37 +4,60 @@ function estilo(titulo) {
     var arrayLink = document.getElementsByTagName('link');
 
     for (var i = 0; i < arrayLink.length; i++) {
-        // Sólo aquellas etiquetas link que hacen referencia a un estilo
-        // y que no sea para impresión
-        if (arrayLink[i].getAttribute('rel') != null &&
-            arrayLink[i].getAttribute('rel').indexOf('stylesheet') != -1 &&
-            arrayLink[i].getAttribute('media') != 'print') {
-            // Si tiene título es un estilo preferido o alternativo,
-            // si no tiene título es un estilo
-            // predeterminado y siempre tiene que utilizarse
-            if (arrayLink[i].getAttribute('title') != null &&
-                arrayLink[i].getAttribute('title').length > 0) {
-                if (arrayLink[i].getAttribute('title') == titulo)
-                    arrayLink[i].disabled = false;
-                else
-                    arrayLink[i].disabled = true;
+        var link = arrayLink[i];
+        var rel = link.getAttribute('rel');
+
+        if (rel != null && rel.indexOf('stylesheet') != -1 && link.getAttribute('media') != 'print') {
+
+            var linkTitle = link.getAttribute('title');
+
+            if (linkTitle != null && linkTitle.length > 0) {
+                if (linkTitle == titulo) {
+                    // activar el estilo: cambiar a "stylesheet" y disabled=false
+                    link.setAttribute('rel', 'stylesheet');
+                    link.disabled = false;
+                } else {
+                    // desactivar el estilo: cambiar a "alternate stylesheet" y disabled=true
+                    link.setAttribute('rel', 'alternate stylesheet');
+                    link.disabled = true;
+                }
             }
         }
     }
 }
 
-/*
+function restaurarEstiloPredeterminado() {
+    var arrayLink = document.getElementsByTagName('link');
 
-</head>
-<body>
-<ul>
-<!-- Esto está mal, así no se tienen que hacer los botones -->
-<li><a href="javascript:estilo('Principal')">Principal</a></li>
-<li><a href="javascript:estilo('Secundario')">Secundario</a></li>
-</ul>
-<p>
-Una página web sencilla.
-</p>
-</body>
+    for (var i = 0; i < arrayLink.length; i++) {
+        var link = arrayLink[i];
+        var rel = link.getAttribute('rel');
 
-*/
+        if (rel != null && rel.indexOf('stylesheet') != -1 && link.getAttribute('media') != 'print' &&
+            link.getAttribute('title') != null && link.getAttribute('title').length > 0) {
+            
+            // Restaurar a "alternate stylesheet" y desactivar
+            link.setAttribute('rel', 'alternate stylesheet');
+            link.disabled = true;
+        }
+    }
+}
+
+function cargarEstiloGuardado() {
+    if (cookiesAceptadas()) {
+        var estiloGuardado = getCookie('estiloPreferido');
+
+        if (estiloGuardado !== '') {
+            estilo(estiloGuardado);
+        }
+    }
+}
+
+/////////////////
+// Load
+
+function load() {
+    cargarEstiloGuardado();
+}
+
+document.addEventListener("DOMContentLoaded", load, false);

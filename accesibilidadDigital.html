@@ -12,17 +12,21 @@
     <link rel="stylesheet" href="./css/colores.css">
 
     <link rel="stylesheet" href="./css/headerFooter.css">
-    
-    
+    <link rel="stylesheet" href="./css/cookies.css">
+
     <!-- Estilos alternativos -->
-    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="estilo oscuro">
-    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="estilo contraste">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_oscuro.css" title="Estilo oscuro">
+    <link rel="alternate stylesheet" href="./css/alternativos/colores_contraste.css" title="Estilo contraste">
     <link rel="alternate stylesheet" href="./css/alternativos/grande.css" title="Texto grande">
     <link rel="alternate stylesheet" href="./css/alternativos/contraste-grande.css"
         title="Alto contraste y texto grande">
 
     <!-- Estilo para impresión -->
     <link rel="stylesheet" href="./css/alternativos/print.css" media="print">
+
+    <script src="./js/cookies.js"></script>
+    <script src="./js/estiloAlternativo.js"></script>
+    <script src="./js/accesibilidadDigital.js"></script>
 
     <meta name="description" content="Página accesibilidad digital">
     <title> Accesibilidad digital. PI - Pisos & Inmuebles </title>
@@ -49,6 +53,8 @@
             </ul>
         </nav>
     </header>
+
+
 
     <main>
         <h1>Accesibilidad digital</h1>
@@ -119,6 +125,13 @@
                 <li><strong>Alto contraste y texto grande</strong>: combina ambas opciones anteriores.</li>
                 <li><strong>Estilo para impresión</strong>: aplicado automáticamente al imprimir o generar PDF.</li>
             </ul>
+            <form id="contenedorSelectorEstilo">
+                <label for="selectorEstilo">Estilo visual:</label>
+                <select id="selectorEstilo">
+                    <option value="">Estilo predeterminado</option>
+                </select>
+            </form>
+            <button type="button" class="btn_normal" id="btnGuardarEstilo">Guardar estilo</button>
             <p>
                 En navegadores que no soportan la selección de estilos alternativos (como Chrome o Edge), se puede
                 utilizar el
@@ -127,6 +140,7 @@
                 texto.
             </p>
         </section>
+
 
         <section>
             <h2>Otras características de accesibilidad</h2>
@@ -157,7 +171,36 @@
     <footer>
         <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
         <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
+        <p><a href="politicaCookies.html">Política de cookies</a></p>
     </footer>
+
+    <aside id="bannerCookies">
+        <p>
+            Este sitio web utiliza cookies propias para mejorar la experiencia del usuario.
+            Puede aceptar o rechazar las cookies.
+            Para más información, consulte nuestra <a href="politicaCookies.html">Política de cookies</a>.
+        </p>
+        <nav class="contenedorBtnCookies">
+            <button type="button" id="btnAceptarCookies" class="btn_normal">Aceptar cookies</button>
+            <button type="button" id="btnRechazarCookies" class="btn_blanco">Rechazar cookies</button>
+        </nav>
+    </aside>
+
+    <dialog id="dialogAvisoCookies">
+        <form method="dialog">
+            <h2>Preferencias guardadas</h2>
+            <p id="mnsDialogCookies"></p>
+            <button class="btn_blanco">Cerrar</button>
+        </form>
+    </dialog>
+
+    <dialog id="dialogError">
+        <form method="dialog">
+            <h2>Error al guardar</h2>
+            <p id="mnsDialogError"></p>
+            <button class="btn_blanco">Entendido</button>
+        </form>
+    </dialog>
 
 </body>
 

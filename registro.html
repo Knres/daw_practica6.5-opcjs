@@ -22,10 +22,10 @@
 
     <link rel="stylesheet" href="./css/headerFooter.css">
     <link rel="stylesheet" href="./css/seccion_loginRegistro.css">
+    <link rel="stylesheet" href="./css/cookies.css">
 
-    
-    
-
+    <script src="./js/cookies.js"></script>
+    <script src="./js/estiloAlternativo.js"></script>
     <!--
         <script src="./js/registro.js"></script>
         -->
@@ -130,8 +130,28 @@
     <footer>
         <p> &copy; <a href="./404.html">Acerca de</a><time datetime="2025"> 2025</time></p>
         <p><a href="accesibilidadDigital.html">Accesibilidad digital</a></p>
-
+        <p><a href="politicaCookies.html">Política de cookies</a></p>
     </footer>
+
+    <aside id="bannerCookies">
+        <p>
+            Este sitio web utiliza cookies propias para mejorar la experiencia del usuario. 
+            Puede aceptar o rechazar las cookies. 
+            Para más información, consulte nuestra <a href="politicaCookies.html">Política de cookies</a>.
+        </p>
+        <nav class="contenedorBtnCookies">
+            <button type="button" id="btnAceptarCookies" class="btn_normal">Aceptar cookies</button>
+            <button type="button" id="btnRechazarCookies" class="btn_blanco">Rechazar cookies</button>
+        </nav>
+    </aside>
+
+    <dialog id="dialogAvisoCookies">
+        <form method="dialog">
+            <h2>Preferencias guardadas</h2>
+            <p id="mnsDialogCookies"></p>
+            <button class="btn_blanco">Cerrar</button>
+        </form>
+    </dialog>
 
     <dialog id="dialogError">
         <form method="dialog">

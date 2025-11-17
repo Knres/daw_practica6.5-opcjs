@@ -1,0 +1,50 @@
+main {
+    >form#aFoto {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    select {
+        display: inherit;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+
+    input[type="submit"] {
+        background-color: var(--btn-blancoEnfoque);
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+
+    }
+
+    input:hover {
+        background-color: var(--btn-enfoque);
+    }
+}
