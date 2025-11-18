@@ -56,6 +56,22 @@
     <main>
         <h1>PI - Pisos & Inmuebles</h1>
 
+        <!-- Controles de ordenación: insertados por defecto en el HTML. -->
+        <div id="controlesOrden" style="margin:0 0 1em 0;">
+            <label for="selectCriterioOrden">Ordenar por: </label>
+            <select id="selectCriterioOrden">
+                <option value="fecha">Fecha</option>
+                <option value="titulo">Título</option>
+                <option value="precio">Precio</option>
+            </select>
+
+            <label for="selectDireccionOrden" style="margin-left:1em;">Dirección: </label>
+            <select id="selectDireccionOrden">
+                <option value="desc">Descendente</option>
+                <option value="asc">Ascendente</option>
+            </select>
+        </div>
+
         <section id="seccion_resultadosAnuncios">
             <h2>Últimos anuncios</h2>
             <article>
@@ -65,63 +81,63 @@
                     <img src="./img/123313131.png" alt="imagen">
                 </a>
 
-                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p><time datetime="2025-09-20">1/09/2025</time></p>
                 <p>Ciudad: Madrid</p>
                 <p>Pais: España</p>
-                <p>Precio: 888888,88 €</p>
+                <p>Precio: 3453,88 €</p>
             </article>
 
             <article>
-                <h3><a href="./404.html">Anuncio 2. Error</a></h3>
+                <h3><a href="./404.html">beee 2. Error</a></h3>
 
                 <a href="./404.html">
                     <img src="./img/123313131.png" alt="imagen">
                 </a>
 
-                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p><time datetime="2025-09-20">2/09/2025</time></p>
                 <p>Ciudad: Madrid</p>
                 <p>Pais: España</p>
-                <p>Precio: 888888,88 €</p>
+                <p>Precio: 32,88 €</p>
             </article>
 
             <article>
-                <h3><a href="./404.html">Anuncio 3. Errordsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></h3>
+                <h3><a href="./404.html">tururu 3. Errordsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></h3>
 
                 <a href="./404.html">
                     <img src="./img/123313131.png" alt="imagen">
                 </a>
 
-                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p><time datetime="2025-09-20">3/09/2025</time></p>
                 <p>Ciudad: Madrid</p>
                 <p>Pais: España</p>
-                <p>Precio: 888888,88 €</p>
+                <p>Precio: 123,88 €</p>
             </article>
             
 
             <article>
-                <h3><a href="./404.html">Anuncio 4. Error</a></h3>
+                <h3><a href="./404.html">opop 4. Error</a></h3>
 
                 <a href="./404.html">
                     <img src="./img/123313131.png" alt="imagen">
                 </a>
 
-                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p><time datetime="2025-09-20">4/09/2025</time></p>
                 <p>Ciudad: Madrid</p>
                 <p>Pais: España</p>
                 <p>Precio: 888888,88 €</p>
             </article>
 
             <article>
-                <h3><a href="./404.html">Anuncio 5. Error</a></h3>
+                <h3><a href="./404.html">epep 5. Error</a></h3>
 
                 <a href="./anuncio.html">
                     <img src="./img/123313131.png" alt="imagen">
                 </a>
 
-                <p><time datetime="2025-09-20">20/09/2025</time></p>
+                <p><time datetime="2025-09-20">5/09/2025</time></p>
                 <p>Ciudad: Madrid</p>
                 <p>Pais: España</p>
-                <p>Precio: 888888,88 €</p>
+                <p>Precio: 67867,88 €</p>
             </article>
         </section>
     </main>
@@ -152,6 +168,7 @@
         </form>
     </dialog>
 
+    <script src="./js/filtroyorden.js"></script>
 </body>
 
 </html>
