@@ -17,7 +17,7 @@ function load() {
 	function extraerFechaDeArticulo(articulo) {
 		var time = articulo.querySelector('time');
 		if (!time) return new Date(0);
-		var dt = time.getAttribute('datetime') || time.textContent.trim();
+		var dt = time.getAttribute('datetime');
 		var fecha = new Date(dt);
 		if (isNaN(fecha)) return new Date(0);
 		return fecha;
@@ -49,18 +49,18 @@ function load() {
 	function ordenarArticulosPor(criterio, direccion) {
 		var copia = articulos.slice();
 		copia.sort((a, b) => {
-			if (criterio === 'fecha') {
+			if (criterio == 'fecha') {
 				return extraerFechaDeArticulo(a) - extraerFechaDeArticulo(b);
 			}
-			if (criterio === 'titulo') {
+			if (criterio == 'titulo') {
 				return extraerTituloDeArticulo(a).localeCompare(extraerTituloDeArticulo(b));
 			}
-			if (criterio === 'precio') {
+			if (criterio == 'precio') {
 				return extraerPrecioDeArticulo(a) - extraerPrecioDeArticulo(b);
 			}
 			return 0;
 		});
-		if (direccion === 'desc') copia.reverse();
+		if (direccion == 'desc') copia.reverse();
 		return copia;
 	}
 

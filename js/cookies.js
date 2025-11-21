@@ -37,10 +37,10 @@ function aceptarCookies() {
 }
 
 function rechazarCookies() {
-    setCookie('cookieConsent', 'rejected', 90);
+    setCookie('cookieConsent', 'rejected', -1);
     setCookie('estiloPreferido', '', -1);
     ocultarBannerCookies();
-    mostrarMensajeConfirmacion('Se han guardado sus preferencias en cuanto a las cookies. Para cambiar sus preferencias en cualquier momento, consulte la política de cookies o siga el enlace que se proporciona en el pie de página.');
+    //mostrarMensajeConfirmacion('Se han guardado sus preferencias en cuanto a las cookies. Para cambiar sus preferencias en cualquier momento, consulte la política de cookies o siga el enlace que se proporciona en el pie de página.');
 }
 
 function ocultarBannerCookies() {

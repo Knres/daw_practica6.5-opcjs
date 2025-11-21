@@ -11,7 +11,7 @@ function validarNombreUsuario(nombre) {
     */
     var exp = new RegExp(
         '^' +           // empezar por
-        '[A-Za-z]' +    // caracteres permitidos A-Za-z0-9
+        '[A-Za-zz]' +    // caracteres permitidos A-Za-z0-9
 
         '[A-Za-z0-9]' + // caracteres permitidos A-Za-z0-9
         '{2,15}' +      // 2-15 caracteres (empieza por 2 por que el primer caractes ya se ha definido)

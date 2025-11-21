@@ -33,7 +33,7 @@ function aceptarCookiesYActualizar() {
 }
 
 function rechazarCookiesYActualizar() {
-    setCookie('cookieConsent', 'rejected', 90);
+    setCookie('cookieConsent', 'rejected', -1);
     
     var estiloCookie = getCookie('estiloPreferido');
     if (estiloCookie !== '') {
